@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="Resultboard">
+      <div class="title">
+        <h3>LETS PLAY THE GAME
+          <h3>pick one of ✋ 👊 ✌️ to start</h3>
+        </h3>
+      </div>
+      <div class="Result">
+        <p>Result</p>
+        <h1> 0 </h1>
+      </div>
+    </div>
+    <div class="hands">
+      <div class="hand paper">
+        <img src="images/paper.png" onclick="pickUserHand('paper')" />
+      </div>
+      <div class="hand scissors">
+        <img src="images/scissors.png" onclick="pickUserHand('scissors')" />
+      </div>
+      <div class="hand rock">
+        <img src="images/rock.png" onclick="pickUserHand('rock')" />
+      </div>
+    </div>
+    <div class="contest">
+      <div class="userhand">
+        <h1>YOU PICKED</h1>
+        <div class="handImageContainer">
+          <img id="userPickImage" src="images/paper.png">
+        </div>
+      </div>
+      <div class="referee">
+        <div class="decision">
+          <h1> YOU WIN! </h1>
+        </div>
+        <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+      </div>
+      <div class="computerhand">
+        <h1>THE COMPUTER PICKED</h1>
+        <div class="handImageContainer">
+          <img id="computerPickImage" src='images/paper.png' />
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="final">
+    <div class="container">
+      <div class="final-items"></div>
+      <div class="soicl-medi">
+        <ul class="final-icon list-unstyled">
+          <li>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100004737584545"><i
+                class="fa fa-facebook fa-2x"></i></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/ZaibaqM"><i class="fa fa-twitter fa-2x"></i></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/mohmmed_alzaibaq/"><i
+                class="fa fa-instagram fa-2x"></i></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/mohmmed-zaibaq"><i class="fa fa-github fa-2x"></i></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://wa.me/970599783727"><i class="fa fa-whatsapp fa-2x"></i></a>
+          </li>
+        </ul>
+        <p>
+          copyright © 2022. all rights reserved. developed by
+          <a target="_blank" href="https://wa.me/970599783727">Mohmmed Zaibaq</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
